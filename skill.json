@@ -1,0 +1,26 @@
+{
+  "name": "genpark-agentic-commerce-merchant-chargeback-prevention-alert-ethoca-verifi-skill",
+  "version": "1.0.0",
+  "description": "Real-time Ethoca / Verifi CDRN dispute alert interceptor, pre-chargeback automatic merchant refund issuer.",
+  "category": "agentic_commerce",
+  "author": "GenPark AI",
+  "website": "https://www.genpark.ai",
+  "linkedin": "https://www.linkedin.com/company/92955550",
+  "main": "skills.py",
+  "tools": [
+    {
+      "name": "intercept_chargeback_prevention_alert",
+      "description": "Real-time Ethoca / Verifi CDRN dispute alert interceptor, pre-chargeback automatic merchant refund issuer.",
+      "sample_input": {
+        "alert_payload": {
+          "network_source": "VERIFI_CDRN",
+          "order_id": "ORD-98412",
+          "acquirer_reference_number": "ARN-849182048102",
+          "disputed_amount_usd": 149.5
+        },
+        "merchant_monthly_transactions": 4500,
+        "current_monthly_chargebacks": 36
+      }
+    }
+  ]
+}
